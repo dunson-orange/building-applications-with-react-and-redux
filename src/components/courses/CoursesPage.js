@@ -45,7 +45,6 @@ function mapStateToProps(state) {
       state.authors.length === 0
         ? []
         : state.courses.map((course) => {
-            debugger;
             return {
               ...course,
               authorName: state.authors.find((a) => a.id === course.authorId)
